@@ -1,0 +1,885 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.4.555">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>Estudio Interacciones RNASEQ</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="Prueba_Interacciones_MariaInserser_files/libs/clipboard/clipboard.min.js"></script>
+<script src="Prueba_Interacciones_MariaInserser_files/libs/quarto-html/quarto.js"></script>
+<script src="Prueba_Interacciones_MariaInserser_files/libs/quarto-html/popper.min.js"></script>
+<script src="Prueba_Interacciones_MariaInserser_files/libs/quarto-html/tippy.umd.min.js"></script>
+<script src="Prueba_Interacciones_MariaInserser_files/libs/quarto-html/anchor.min.js"></script>
+<link href="Prueba_Interacciones_MariaInserser_files/libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="Prueba_Interacciones_MariaInserser_files/libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="Prueba_Interacciones_MariaInserser_files/libs/bootstrap/bootstrap.min.js"></script>
+<link href="Prueba_Interacciones_MariaInserser_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="Prueba_Interacciones_MariaInserser_files/libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<link href="Prueba_Interacciones_MariaInserser_files/libs/htmltools-fill-0.5.8.1/fill.css" rel="stylesheet">
+<script src="Prueba_Interacciones_MariaInserser_files/libs/htmlwidgets-1.6.4/htmlwidgets.js"></script>
+<link href="Prueba_Interacciones_MariaInserser_files/libs/datatables-css-0.0.0/datatables-crosstalk.css" rel="stylesheet">
+<script src="Prueba_Interacciones_MariaInserser_files/libs/datatables-binding-0.33/datatables.js"></script>
+<script src="Prueba_Interacciones_MariaInserser_files/libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<link href="Prueba_Interacciones_MariaInserser_files/libs/dt-core-1.13.6/css/jquery.dataTables.min.css" rel="stylesheet">
+<link href="Prueba_Interacciones_MariaInserser_files/libs/dt-core-1.13.6/css/jquery.dataTables.extra.css" rel="stylesheet">
+<script src="Prueba_Interacciones_MariaInserser_files/libs/dt-core-1.13.6/js/jquery.dataTables.min.js"></script>
+<script src="Prueba_Interacciones_MariaInserser_files/libs/jszip-1.13.6/jszip.min.js"></script>
+<script src="Prueba_Interacciones_MariaInserser_files/libs/pdfmake-1.13.6/pdfmake.js"></script>
+<script src="Prueba_Interacciones_MariaInserser_files/libs/pdfmake-1.13.6/vfs_fonts.js"></script>
+<link href="Prueba_Interacciones_MariaInserser_files/libs/dt-ext-buttons-1.13.6/css/buttons.dataTables.min.css" rel="stylesheet">
+<script src="Prueba_Interacciones_MariaInserser_files/libs/dt-ext-buttons-1.13.6/js/dataTables.buttons.min.js"></script>
+<script src="Prueba_Interacciones_MariaInserser_files/libs/dt-ext-buttons-1.13.6/js/buttons.html5.min.js"></script>
+<script src="Prueba_Interacciones_MariaInserser_files/libs/dt-ext-buttons-1.13.6/js/buttons.colVis.min.js"></script>
+<script src="Prueba_Interacciones_MariaInserser_files/libs/dt-ext-buttons-1.13.6/js/buttons.print.min.js"></script>
+<link href="Prueba_Interacciones_MariaInserser_files/libs/crosstalk-1.2.1/css/crosstalk.min.css" rel="stylesheet">
+<script src="Prueba_Interacciones_MariaInserser_files/libs/crosstalk-1.2.1/js/crosstalk.min.js"></script>
+
+
+</head>
+
+<body class="fullcontent">
+
+<div id="quarto-content" class="page-columns page-rows-contents page-layout-article">
+
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Estudio Interacciones RNASEQ</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<div class="cell">
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] TRUE</code></pre>
+</div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] TRUE</code></pre>
+</div>
+</div>
+<div class="cell">
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] TRUE</code></pre>
+</div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] TRUE</code></pre>
+</div>
+</div>
+<div class="cell">
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] TRUE</code></pre>
+</div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] TRUE</code></pre>
+</div>
+</div>
+<div class="cell">
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] TRUE</code></pre>
+</div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] TRUE</code></pre>
+</div>
+</div>
+<div class="cell">
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] TRUE</code></pre>
+</div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] TRUE</code></pre>
+</div>
+</div>
+<div class="cell">
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] TRUE</code></pre>
+</div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] TRUE</code></pre>
+</div>
+</div>
+<div class="cell">
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] TRUE</code></pre>
+</div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] TRUE</code></pre>
+</div>
+</div>
+<div class="cell">
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] TRUE</code></pre>
+</div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] TRUE</code></pre>
+</div>
+</div>
+<div class="cell">
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] TRUE</code></pre>
+</div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] TRUE</code></pre>
+</div>
+</div>
+<div class="cell">
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] TRUE</code></pre>
+</div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] TRUE</code></pre>
+</div>
+</div>
+<div class="cell">
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] TRUE</code></pre>
+</div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] TRUE</code></pre>
+</div>
+</div>
+<div class="cell">
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] TRUE</code></pre>
+</div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] TRUE</code></pre>
+</div>
+</div>
+<p>####################################################</p>
+<section id="tablas-y-plots" class="level1">
+<h1>Tablas y Plots</h1>
+<section id="higado" class="level2">
+<h2 class="anchored" data-anchor-id="higado">Higado</h2>
+<section id="interacción-análisis_1" class="level3">
+<h3 class="anchored" data-anchor-id="interacción-análisis_1">Interacción-Análisis_1</h3>
+<div class="cell">
+<div class="cell-output-display">
+<div class="datatables html-widget html-fill-item" id="htmlwidget-8e357110303852807b12" style="width:100%;height:auto;"></div>
+<script type="application/json" data-for="htmlwidget-8e357110303852807b12">{"x":{"filter":"none","vertical":false,"extensions":["Buttons"],"data":[["1","2","3","4","5","6","7","8","9","10","11","12"],["ENSRNOG00000000969","ENSRNOG00000001973","ENSRNOG00000009730","ENSRNOG00000009875","ENSRNOG00000013251","ENSRNOG00000017878","ENSRNOG00000017914","ENSRNOG00000019736","ENSRNOG00000022082","ENSRNOG00000030316","ENSRNOG00000036837","ENSRNOG00000053078"],["Cyp3a18","Ugt2a1","Cyp7b1","Akr1b7","Trim24","Aldh1a7","Prkcdbp","LOC100911034","Dusp11","Otogl","Nfe2","U11"],[3584.705148734739,582.1500698851612,370.56159090096,2837.99348376191,802.3349336385237,836.9223474578533,1675.7508270327,85.85285993102565,20.3706794274315,316.0990674876441,32.60231315670179,15.81820438584741],[2.177522520897339,1.608894310424303,-2.022871058656273,-4.810356491361917,-1.881842985338525,-3.039020826268678,1.660082453704999,-24.85921758452936,-30,-4.30642100570574,-2.375769394094092,23.99331772548424],[0.4031698786022893,0.2357351207268968,0.3474193399920179,0.9430173456198405,0.3691797627857579,0.425264738266512,0.2385787811862461,3.248768287732189,5.891074031817664,0.5415915055376352,0.4544162664569061,4.698763812578783],[5.401004976974921,6.825008956931089,-5.822563184602068,-5.101026522688291,-5.09736224742794,-7.146185782194182,6.958214999049134,-7.651890003482643,-5.092450007922178,-7.951419033854265,-5.228178587483276,5.10630427119004],[6.626858700971258e-08,8.791982973795796e-12,5.795187920699886e-09,3.378162135889127e-07,3.44418870127955e-07,8.922228823662366e-13,3.446110330319199e-12,1.980466164109256e-14,3.534659317521672e-07,1.843871130882172e-15,1.711881154366976e-07,3.285205536308677e-07],[0.000117477637621468,2.49375805068744e-08,1.174105072733797e-05,0.000334190256273949,0.000334190256273949,4.217834972572655e-09,1.221818417614672e-08,1.404348556969874e-10,0.000334190256273949,2.614978037817096e-11,0.0002427789853123246,0.000334190256273949]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th> <\/th>\n      <th>Ensembl<\/th>\n      <th>Gen<\/th>\n      <th>baseMean<\/th>\n      <th>log2FoldChange<\/th>\n      <th>lfcSE<\/th>\n      <th>stat<\/th>\n      <th>pvalue<\/th>\n      <th>padj<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"dom":"Blfrtip","buttons":["copy","csv","excel","pdf","print"],"lengthMenu":[[10,25,50,-1],["10","25","50","All"]],"columnDefs":[{"className":"dt-right","targets":[3,4,5,6,7,8]},{"orderable":false,"targets":0},{"name":" ","targets":0},{"name":"Ensembl","targets":1},{"name":"Gen","targets":2},{"name":"baseMean","targets":3},{"name":"log2FoldChange","targets":4},{"name":"lfcSE","targets":5},{"name":"stat","targets":6},{"name":"pvalue","targets":7},{"name":"padj","targets":8}],"order":[],"autoWidth":false,"orderClasses":false}},"evals":[],"jsHooks":[]}</script>
+</div>
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="Prueba_Interacciones_MariaInserser_files/figure-html/unnamed-chunk-28-2.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="Prueba_Interacciones_MariaInserser_files/figure-html/unnamed-chunk-28-3.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+</div>
+</section>
+<section id="interacción-análisis_2" class="level3">
+<h3 class="anchored" data-anchor-id="interacción-análisis_2">Interacción-Análisis_2</h3>
+<div class="cell">
+<div class="cell-output-display">
+<div class="datatables html-widget html-fill-item" id="htmlwidget-b57f1291982bc5fb97eb" style="width:100%;height:auto;"></div>
+<script type="application/json" data-for="htmlwidget-b57f1291982bc5fb97eb">{"x":{"filter":"none","vertical":false,"extensions":["Buttons"],"data":[["1"],["ENSRNOG00000033748"],["AABR07060610.1"],[10.66496994033333],[22.17847956993898],[4.003488840872274],[5.53978803275664],[3.028379725688684e-08],[0.0005067993470940013]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th> <\/th>\n      <th>Ensembl<\/th>\n      <th>Gen<\/th>\n      <th>baseMean<\/th>\n      <th>log2FoldChange<\/th>\n      <th>lfcSE<\/th>\n      <th>stat<\/th>\n      <th>pvalue<\/th>\n      <th>padj<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"dom":"Blfrtip","buttons":["copy","csv","excel","pdf","print"],"lengthMenu":[[10,25,50,-1],["10","25","50","All"]],"columnDefs":[{"className":"dt-right","targets":[3,4,5,6,7,8]},{"orderable":false,"targets":0},{"name":" ","targets":0},{"name":"Ensembl","targets":1},{"name":"Gen","targets":2},{"name":"baseMean","targets":3},{"name":"log2FoldChange","targets":4},{"name":"lfcSE","targets":5},{"name":"stat","targets":6},{"name":"pvalue","targets":7},{"name":"padj","targets":8}],"order":[],"autoWidth":false,"orderClasses":false}},"evals":[],"jsHooks":[]}</script>
+</div>
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="Prueba_Interacciones_MariaInserser_files/figure-html/unnamed-chunk-29-2.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="Prueba_Interacciones_MariaInserser_files/figure-html/unnamed-chunk-29-3.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+</div>
+</section>
+<section id="interacción-análisis_3" class="level3">
+<h3 class="anchored" data-anchor-id="interacción-análisis_3">Interacción-Análisis_3</h3>
+<div class="cell">
+<div class="cell-output-display">
+<div class="datatables html-widget html-fill-item" id="htmlwidget-41f62949978ff21b39d1" style="width:100%;height:auto;"></div>
+<script type="application/json" data-for="htmlwidget-41f62949978ff21b39d1">{"x":{"filter":"none","vertical":false,"extensions":["Buttons"],"data":[[],[],[],[],[],[],[],[],[]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th> <\/th>\n      <th>Ensembl<\/th>\n      <th>Gen<\/th>\n      <th>baseMean<\/th>\n      <th>log2FoldChange<\/th>\n      <th>lfcSE<\/th>\n      <th>stat<\/th>\n      <th>pvalue<\/th>\n      <th>padj<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"dom":"Blfrtip","buttons":["copy","csv","excel","pdf","print"],"lengthMenu":[[10,25,50,-1],["10","25","50","All"]],"columnDefs":[{"className":"dt-right","targets":[3,4,5,6,7,8]},{"orderable":false,"targets":0},{"name":" ","targets":0},{"name":"Ensembl","targets":1},{"name":"Gen","targets":2},{"name":"baseMean","targets":3},{"name":"log2FoldChange","targets":4},{"name":"lfcSE","targets":5},{"name":"stat","targets":6},{"name":"pvalue","targets":7},{"name":"padj","targets":8}],"order":[],"autoWidth":false,"orderClasses":false}},"evals":[],"jsHooks":[]}</script>
+</div>
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="Prueba_Interacciones_MariaInserser_files/figure-html/unnamed-chunk-30-2.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="Prueba_Interacciones_MariaInserser_files/figure-html/unnamed-chunk-30-3.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+</div>
+</section>
+<section id="interacción-análisis_4" class="level3">
+<h3 class="anchored" data-anchor-id="interacción-análisis_4">Interacción-Análisis_4</h3>
+<div class="cell">
+<div class="cell-output-display">
+<div class="datatables html-widget html-fill-item" id="htmlwidget-a60ea2f53a4b2064037e" style="width:100%;height:auto;"></div>
+<script type="application/json" data-for="htmlwidget-a60ea2f53a4b2064037e">{"x":{"filter":"none","vertical":false,"extensions":["Buttons"],"data":[["1","2","3","4","5","6","7","8","9","10","11"],["ENSRNOG00000005639","ENSRNOG00000009730","ENSRNOG00000009875","ENSRNOG00000013925","ENSRNOG00000017438","ENSRNOG00000017878","ENSRNOG00000019736","ENSRNOG00000030316","ENSRNOG00000049075","ENSRNOG00000051743","ENSRNOG00000061365"],["Ar","Cyp7b1","Akr1b7","Nox4","Gfra1","Aldh1a7","LOC100911034","Otogl","Fabp5","AABR07043822.1","AABR07007055.1"],[373.3901694550244,456.6494467214298,101.3683560473249,761.1353286399707,491.1845940689584,377.6360850650806,87.22668216430971,57.99529220288134,387.5553490508732,36.17265801057823,71.65194032199197],[-2.180041972056445,1.598164132170979,8.399316682687868,-1.97690986495518,-3.307965376547246,4.140586359719411,23.1657132327582,4.142075515192456,1.97772434952531,-1.507696078800928,-3.573376859496521],[0.4303837856840758,0.3128116294885822,1.401689701250849,0.3657195277344096,0.3864414391957275,0.6247634793512808,3.096001225534068,0.8005805221668554,0.3804092831810476,0.3070843950186526,0.5438527156230027],[-5.065344105822587,5.109030424424528,5.992279657325321,-5.405535430940504,-8.560068980779789,6.627446220158007,7.482462552566355,5.173839982993207,5.198938188330317,-4.909712454484538,-6.570486377737565],[4.076632794719228e-07,3.238162128626808e-07,2.069196933471915e-09,6.46150758257771e-08,1.128000095475615e-17,3.415440063475231e-11,7.29426831951406e-14,2.293312469782477e-07,2.004301569135767e-07,9.121003586157796e-07,5.015117236852265e-11],[0.0004424628994195714,0.0003866041765367547,4.940828437744239e-06,0.0001102056271834218,1.346719313988337e-13,1.359231297261026e-07,4.354313473333918e-10,0.0003042206397414777,0.0002991169554238991,0.0007778261558224138,1.49688711726948e-07]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th> <\/th>\n      <th>Ensembl<\/th>\n      <th>Gen<\/th>\n      <th>baseMean<\/th>\n      <th>log2FoldChange<\/th>\n      <th>lfcSE<\/th>\n      <th>stat<\/th>\n      <th>pvalue<\/th>\n      <th>padj<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"dom":"Blfrtip","buttons":["copy","csv","excel","pdf","print"],"lengthMenu":[[10,25,50,-1],["10","25","50","All"]],"columnDefs":[{"className":"dt-right","targets":[3,4,5,6,7,8]},{"orderable":false,"targets":0},{"name":" ","targets":0},{"name":"Ensembl","targets":1},{"name":"Gen","targets":2},{"name":"baseMean","targets":3},{"name":"log2FoldChange","targets":4},{"name":"lfcSE","targets":5},{"name":"stat","targets":6},{"name":"pvalue","targets":7},{"name":"padj","targets":8}],"order":[],"autoWidth":false,"orderClasses":false}},"evals":[],"jsHooks":[]}</script>
+</div>
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="Prueba_Interacciones_MariaInserser_files/figure-html/unnamed-chunk-31-2.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="Prueba_Interacciones_MariaInserser_files/figure-html/unnamed-chunk-31-3.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+</div>
+</section>
+</section>
+<section id="musculo" class="level2">
+<h2 class="anchored" data-anchor-id="musculo">Musculo</h2>
+<section id="interacción-análisis_1-1" class="level3">
+<h3 class="anchored" data-anchor-id="interacción-análisis_1-1">Interacción-Análisis_1</h3>
+<div class="cell">
+<div class="cell-output-display">
+<div class="datatables html-widget html-fill-item" id="htmlwidget-4a5a30b45591adb21b21" style="width:100%;height:auto;"></div>
+<script type="application/json" data-for="htmlwidget-4a5a30b45591adb21b21">{"x":{"filter":"none","vertical":false,"extensions":["Buttons"],"data":[["1"],["ENSRNOG00000059869"],["U11"],[31.6156804974311],[30],[4.021219711555446],[7.460422993996445],[8.624514949358827e-14],[1.482467874645289e-09]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th> <\/th>\n      <th>Ensembl<\/th>\n      <th>Gen<\/th>\n      <th>baseMean<\/th>\n      <th>log2FoldChange<\/th>\n      <th>lfcSE<\/th>\n      <th>stat<\/th>\n      <th>pvalue<\/th>\n      <th>padj<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"dom":"Blfrtip","buttons":["copy","csv","excel","pdf","print"],"lengthMenu":[[10,25,50,-1],["10","25","50","All"]],"columnDefs":[{"className":"dt-right","targets":[3,4,5,6,7,8]},{"orderable":false,"targets":0},{"name":" ","targets":0},{"name":"Ensembl","targets":1},{"name":"Gen","targets":2},{"name":"baseMean","targets":3},{"name":"log2FoldChange","targets":4},{"name":"lfcSE","targets":5},{"name":"stat","targets":6},{"name":"pvalue","targets":7},{"name":"padj","targets":8}],"order":[],"autoWidth":false,"orderClasses":false}},"evals":[],"jsHooks":[]}</script>
+</div>
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="Prueba_Interacciones_MariaInserser_files/figure-html/unnamed-chunk-33-2.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="Prueba_Interacciones_MariaInserser_files/figure-html/unnamed-chunk-33-3.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+</div>
+</section>
+<section id="interacción-análisis_2-1" class="level3">
+<h3 class="anchored" data-anchor-id="interacción-análisis_2-1">Interacción-Análisis_2</h3>
+<div class="cell">
+<div class="cell-output-display">
+<div class="datatables html-widget html-fill-item" id="htmlwidget-cd7b0245f3f1b01e2fc0" style="width:100%;height:auto;"></div>
+<script type="application/json" data-for="htmlwidget-cd7b0245f3f1b01e2fc0">{"x":{"filter":"none","vertical":false,"extensions":["Buttons"],"data":[[],[],[],[],[],[],[],[],[]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th> <\/th>\n      <th>Ensembl<\/th>\n      <th>Gen<\/th>\n      <th>baseMean<\/th>\n      <th>log2FoldChange<\/th>\n      <th>lfcSE<\/th>\n      <th>stat<\/th>\n      <th>pvalue<\/th>\n      <th>padj<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"dom":"Blfrtip","buttons":["copy","csv","excel","pdf","print"],"lengthMenu":[[10,25,50,-1],["10","25","50","All"]],"columnDefs":[{"className":"dt-right","targets":[3,4,5,6,7,8]},{"orderable":false,"targets":0},{"name":" ","targets":0},{"name":"Ensembl","targets":1},{"name":"Gen","targets":2},{"name":"baseMean","targets":3},{"name":"log2FoldChange","targets":4},{"name":"lfcSE","targets":5},{"name":"stat","targets":6},{"name":"pvalue","targets":7},{"name":"padj","targets":8}],"order":[],"autoWidth":false,"orderClasses":false}},"evals":[],"jsHooks":[]}</script>
+</div>
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="Prueba_Interacciones_MariaInserser_files/figure-html/unnamed-chunk-34-2.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="Prueba_Interacciones_MariaInserser_files/figure-html/unnamed-chunk-34-3.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+</div>
+</section>
+<section id="interacción-análisis_3-1" class="level3">
+<h3 class="anchored" data-anchor-id="interacción-análisis_3-1">Interacción-Análisis_3</h3>
+<div class="cell">
+<div class="cell-output-display">
+<div class="datatables html-widget html-fill-item" id="htmlwidget-7b6e8a41675d01004b37" style="width:100%;height:auto;"></div>
+<script type="application/json" data-for="htmlwidget-7b6e8a41675d01004b37">{"x":{"filter":"none","vertical":false,"extensions":["Buttons"],"data":[["1"],["ENSRNOG00000059244"],["Fzd8"],[41.96279762615944],[7.282472986629416],[1.301313867097266],[5.59624635590323],[2.190423919059825e-08],[0.0003740367884186558]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th> <\/th>\n      <th>Ensembl<\/th>\n      <th>Gen<\/th>\n      <th>baseMean<\/th>\n      <th>log2FoldChange<\/th>\n      <th>lfcSE<\/th>\n      <th>stat<\/th>\n      <th>pvalue<\/th>\n      <th>padj<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"dom":"Blfrtip","buttons":["copy","csv","excel","pdf","print"],"lengthMenu":[[10,25,50,-1],["10","25","50","All"]],"columnDefs":[{"className":"dt-right","targets":[3,4,5,6,7,8]},{"orderable":false,"targets":0},{"name":" ","targets":0},{"name":"Ensembl","targets":1},{"name":"Gen","targets":2},{"name":"baseMean","targets":3},{"name":"log2FoldChange","targets":4},{"name":"lfcSE","targets":5},{"name":"stat","targets":6},{"name":"pvalue","targets":7},{"name":"padj","targets":8}],"order":[],"autoWidth":false,"orderClasses":false}},"evals":[],"jsHooks":[]}</script>
+</div>
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="Prueba_Interacciones_MariaInserser_files/figure-html/unnamed-chunk-35-2.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="Prueba_Interacciones_MariaInserser_files/figure-html/unnamed-chunk-35-3.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+</div>
+</section>
+<section id="interacción-análisis_4-1" class="level3">
+<h3 class="anchored" data-anchor-id="interacción-análisis_4-1">Interacción-Análisis_4</h3>
+<div class="cell">
+<div class="cell-output-display">
+<div class="datatables html-widget html-fill-item" id="htmlwidget-0c4746513843eef609dc" style="width:100%;height:auto;"></div>
+<script type="application/json" data-for="htmlwidget-0c4746513843eef609dc">{"x":{"filter":"none","vertical":false,"extensions":["Buttons"],"data":[["1","2"],["ENSRNOG00000013141","ENSRNOG00000055836"],["Eno2","AABR07000402.1"],[12.26345012327337,4.15223087589031],[-20.64280101567635,30],[3.815081858847595,4.548724798647043],[-5.410840914934347,6.595255006177357],[6.272948033638867e-08,4.245255342833578e-11],[0.0005551245362368715,7.51367743128115e-07]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th> <\/th>\n      <th>Ensembl<\/th>\n      <th>Gen<\/th>\n      <th>baseMean<\/th>\n      <th>log2FoldChange<\/th>\n      <th>lfcSE<\/th>\n      <th>stat<\/th>\n      <th>pvalue<\/th>\n      <th>padj<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"dom":"Blfrtip","buttons":["copy","csv","excel","pdf","print"],"lengthMenu":[[10,25,50,-1],["10","25","50","All"]],"columnDefs":[{"className":"dt-right","targets":[3,4,5,6,7,8]},{"orderable":false,"targets":0},{"name":" ","targets":0},{"name":"Ensembl","targets":1},{"name":"Gen","targets":2},{"name":"baseMean","targets":3},{"name":"log2FoldChange","targets":4},{"name":"lfcSE","targets":5},{"name":"stat","targets":6},{"name":"pvalue","targets":7},{"name":"padj","targets":8}],"order":[],"autoWidth":false,"orderClasses":false}},"evals":[],"jsHooks":[]}</script>
+</div>
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="Prueba_Interacciones_MariaInserser_files/figure-html/unnamed-chunk-36-2.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="Prueba_Interacciones_MariaInserser_files/figure-html/unnamed-chunk-36-3.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+</div>
+</section>
+</section>
+<section id="graso" class="level2">
+<h2 class="anchored" data-anchor-id="graso">Graso</h2>
+<section id="interacción-análisis_1-2" class="level3">
+<h3 class="anchored" data-anchor-id="interacción-análisis_1-2">Interacción-Análisis_1</h3>
+<div class="cell">
+<div class="cell-output-display">
+<div class="datatables html-widget html-fill-item" id="htmlwidget-b23b9b0d07e52f65b4c5" style="width:100%;height:auto;"></div>
+<script type="application/json" data-for="htmlwidget-b23b9b0d07e52f65b4c5">{"x":{"filter":"none","vertical":false,"extensions":["Buttons"],"data":[[],[],[],[],[],[],[],[],[]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th> <\/th>\n      <th>Ensembl<\/th>\n      <th>Gen<\/th>\n      <th>baseMean<\/th>\n      <th>log2FoldChange<\/th>\n      <th>lfcSE<\/th>\n      <th>stat<\/th>\n      <th>pvalue<\/th>\n      <th>padj<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"dom":"Blfrtip","buttons":["copy","csv","excel","pdf","print"],"lengthMenu":[[10,25,50,-1],["10","25","50","All"]],"columnDefs":[{"className":"dt-right","targets":[3,4,5,6,7,8]},{"orderable":false,"targets":0},{"name":" ","targets":0},{"name":"Ensembl","targets":1},{"name":"Gen","targets":2},{"name":"baseMean","targets":3},{"name":"log2FoldChange","targets":4},{"name":"lfcSE","targets":5},{"name":"stat","targets":6},{"name":"pvalue","targets":7},{"name":"padj","targets":8}],"order":[],"autoWidth":false,"orderClasses":false}},"evals":[],"jsHooks":[]}</script>
+</div>
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="Prueba_Interacciones_MariaInserser_files/figure-html/unnamed-chunk-38-2.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="Prueba_Interacciones_MariaInserser_files/figure-html/unnamed-chunk-38-3.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+</div>
+</section>
+<section id="interacción-análisis_2-2" class="level3">
+<h3 class="anchored" data-anchor-id="interacción-análisis_2-2">Interacción-Análisis_2</h3>
+<div class="cell">
+<div class="cell-output-display">
+<div class="datatables html-widget html-fill-item" id="htmlwidget-d2fad68cf41429b0c8d7" style="width:100%;height:auto;"></div>
+<script type="application/json" data-for="htmlwidget-d2fad68cf41429b0c8d7">{"x":{"filter":"none","vertical":false,"extensions":["Buttons"],"data":[["1","2","3","4","5","6","7"],["ENSRNOG00000022082","ENSRNOG00000034087","ENSRNOG00000037744","ENSRNOG00000048181","ENSRNOG00000050545","ENSRNOG00000050978","ENSRNOG00000056028"],["Dusp11","Krt42","LOC100910735","Zfp697","AABR07015056.1","LOC100911295","Rfxap"],[46.06838184503444,88.47363185608232,8.727782211829524,21.68539581819993,5.484753536124485,17.310264788158,24.88431363666497],[21.43985392975839,-3.847383944429839,30,-19.90332981329055,-30,-30,30],[3.486683620362732,0.7581988695377568,5.893343530783072,3.596818884190592,5.895605979789756,5.891727482333463,5.890923565483698],[6.149067785946096,-5.074373095247997,5.090488929297793,-5.533592447696872,-5.088535445353801,-5.091885205138217,5.092580079595164],[7.793966653262031e-10,3.887755882999018e-07,3.571414243525462e-07,3.137374982263831e-08,3.608393440918939e-07,3.545207362150192e-07,3.532234442633272e-07],[1.196763579608385e-05,0.0008528070226207131,0.0008528070226207131,0.0002408719642633056,0.0008528070226207131,0.0008528070226207131,0.0008528070226207131]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th> <\/th>\n      <th>Ensembl<\/th>\n      <th>Gen<\/th>\n      <th>baseMean<\/th>\n      <th>log2FoldChange<\/th>\n      <th>lfcSE<\/th>\n      <th>stat<\/th>\n      <th>pvalue<\/th>\n      <th>padj<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"dom":"Blfrtip","buttons":["copy","csv","excel","pdf","print"],"lengthMenu":[[10,25,50,-1],["10","25","50","All"]],"columnDefs":[{"className":"dt-right","targets":[3,4,5,6,7,8]},{"orderable":false,"targets":0},{"name":" ","targets":0},{"name":"Ensembl","targets":1},{"name":"Gen","targets":2},{"name":"baseMean","targets":3},{"name":"log2FoldChange","targets":4},{"name":"lfcSE","targets":5},{"name":"stat","targets":6},{"name":"pvalue","targets":7},{"name":"padj","targets":8}],"order":[],"autoWidth":false,"orderClasses":false}},"evals":[],"jsHooks":[]}</script>
+</div>
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="Prueba_Interacciones_MariaInserser_files/figure-html/unnamed-chunk-39-2.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="Prueba_Interacciones_MariaInserser_files/figure-html/unnamed-chunk-39-3.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+</div>
+</section>
+<section id="interacción-análisis_3-2" class="level3">
+<h3 class="anchored" data-anchor-id="interacción-análisis_3-2">Interacción-Análisis_3</h3>
+<div class="cell">
+<div class="cell-output-display">
+<div class="datatables html-widget html-fill-item" id="htmlwidget-3e30d130a64855015bb7" style="width:100%;height:auto;"></div>
+<script type="application/json" data-for="htmlwidget-3e30d130a64855015bb7">{"x":{"filter":"none","vertical":false,"extensions":["Buttons"],"data":[["1","2"],["ENSRNOG00000049025","ENSRNOG00000053569"],["Rps6","SNORA44"],[1259.532890406543,13.1682920028389],[26.41142322187849,-30],[3.538843208512708,4.480082298095007],[7.463292851840867,-6.69630555955555],[8.438650176886698e-14,2.137545366392402e-11],[1.63777322633017e-09,2.074274023547187e-07]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th> <\/th>\n      <th>Ensembl<\/th>\n      <th>Gen<\/th>\n      <th>baseMean<\/th>\n      <th>log2FoldChange<\/th>\n      <th>lfcSE<\/th>\n      <th>stat<\/th>\n      <th>pvalue<\/th>\n      <th>padj<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"dom":"Blfrtip","buttons":["copy","csv","excel","pdf","print"],"lengthMenu":[[10,25,50,-1],["10","25","50","All"]],"columnDefs":[{"className":"dt-right","targets":[3,4,5,6,7,8]},{"orderable":false,"targets":0},{"name":" ","targets":0},{"name":"Ensembl","targets":1},{"name":"Gen","targets":2},{"name":"baseMean","targets":3},{"name":"log2FoldChange","targets":4},{"name":"lfcSE","targets":5},{"name":"stat","targets":6},{"name":"pvalue","targets":7},{"name":"padj","targets":8}],"order":[],"autoWidth":false,"orderClasses":false}},"evals":[],"jsHooks":[]}</script>
+</div>
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="Prueba_Interacciones_MariaInserser_files/figure-html/unnamed-chunk-40-2.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="Prueba_Interacciones_MariaInserser_files/figure-html/unnamed-chunk-40-3.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+</div>
+</section>
+<section id="interacción-análisis_4-2" class="level3">
+<h3 class="anchored" data-anchor-id="interacción-análisis_4-2">Interacción-Análisis_4</h3>
+<div class="cell">
+<div class="cell-output-display">
+<div class="datatables html-widget html-fill-item" id="htmlwidget-c897bcf125285b24a0d4" style="width:100%;height:auto;"></div>
+<script type="application/json" data-for="htmlwidget-c897bcf125285b24a0d4">{"x":{"filter":"none","vertical":false,"extensions":["Buttons"],"data":[["1","2","3","4"],["ENSRNOG00000045908","ENSRNOG00000048985","ENSRNOG00000049913","ENSRNOG00000050545"],["LOC100911800","LOC100910575","Rbm12","AABR07015056.1"],[7.433025801881606,32.13340913248097,72.34309535600015,29.43599274238072],[21.4601236535157,21.31807151779546,22.48291804342471,-20.9682709972904],[3.053518976800884,3.395827180710109,3.783147726913281,3.54447871103025],[7.027997473262497,6.2777256860691,5.942913062443061,-5.915755942344393],[2.095186909269514e-12,3.4356136286796e-10,2.800009539046496e-09,3.303547596950672e-09],[4.28717145374728e-08,3.514976303502099e-06,1.689929773220116e-05,1.689929773220116e-05]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th> <\/th>\n      <th>Ensembl<\/th>\n      <th>Gen<\/th>\n      <th>baseMean<\/th>\n      <th>log2FoldChange<\/th>\n      <th>lfcSE<\/th>\n      <th>stat<\/th>\n      <th>pvalue<\/th>\n      <th>padj<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"dom":"Blfrtip","buttons":["copy","csv","excel","pdf","print"],"lengthMenu":[[10,25,50,-1],["10","25","50","All"]],"columnDefs":[{"className":"dt-right","targets":[3,4,5,6,7,8]},{"orderable":false,"targets":0},{"name":" ","targets":0},{"name":"Ensembl","targets":1},{"name":"Gen","targets":2},{"name":"baseMean","targets":3},{"name":"log2FoldChange","targets":4},{"name":"lfcSE","targets":5},{"name":"stat","targets":6},{"name":"pvalue","targets":7},{"name":"padj","targets":8}],"order":[],"autoWidth":false,"orderClasses":false}},"evals":[],"jsHooks":[]}</script>
+</div>
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="Prueba_Interacciones_MariaInserser_files/figure-html/unnamed-chunk-41-2.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="Prueba_Interacciones_MariaInserser_files/figure-html/unnamed-chunk-41-3.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+</div>
+</section>
+</section>
+</section>
+
+</main>
+<!-- /main column -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp('/' + window.location.host + '/');
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
+        }
+      }
+    }
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+    const config = {
+      allowHTML: true,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start',
+    };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      if (note) {
+        return note.innerHTML;
+      } else {
+        return "";
+      }
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      // TODO in 1.5, we should make sure this works without a callout special case
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            div.style.left = 0;
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+
+
+
+
+</body></html>
